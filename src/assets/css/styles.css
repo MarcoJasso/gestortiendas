@@ -1,0 +1,95 @@
+.mdl-textfield__input {
+    border-radius: 5px 5px 0 0;
+}
+
+.mdl-textfield__label {
+    color: rgba(0, 0,0, 0.6);
+}
+
+.mdl-textfield__label:after {
+    /*background-color: #0173a6;*/
+    background-color: #600b00;
+}
+/*.mdl-textfield__input{
+    color: black;
+}*/
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label{
+    /*color: #0173a6;*/
+    color: #600b00;
+}
+
+.wallpaper-log{
+    background-image: url("../img/f_app.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.bar1 {
+    background-color: rgba(2, 58, 80, 1) !important;
+}
+
+.bar2 {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)),
+    linear-gradient(to right, rgb(2, 58, 80), rgb(2, 58, 80)) !important;
+}
+
+.span-subtitle {
+    width: 100%;
+    text-align: center;
+}
+
+.content__log_usr {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /*background-color: coral;*/
+}
+
+.circle-base {
+    width: 100px;
+    margin: 0 auto;
+    height: 100px;
+    border-radius: 50%;
+    background: #232526;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #414345, #FFF,#232526);
+    /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to bottom, #232526, #600b00);*/
+    background: linear-gradient(to bottom, #414345, #232526);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.circle-base .circle__content_main {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #232526;
+    margin: 5px auto;
+    margin-top: 10% !important;
+    overflow: hidden;
+}
+
+.circle__content_main img {
+    width: 100%;
+    height: auto;
+}
+
+.circle__content_main h4 {
+    margin: 30% auto;
+    width: min-content;
+    font-weight: bold;
+    font-size: 32px;
+    color: #626465;
+}
+
+@supports(object-fit: cover){
+    .circle__content_main img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
